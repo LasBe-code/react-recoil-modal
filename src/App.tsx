@@ -1,4 +1,3 @@
-import './App.css';
 import { ModalContainer } from './Components/ModalContainer';
 import { useModal } from './hooks/useModal';
 
