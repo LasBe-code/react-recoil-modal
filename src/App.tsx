@@ -1,24 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { ModalContainer } from './Components/ModalContainer';
+import { useModal } from './hooks/useModal';
 
 function App() {
+  const { openModal } = useModal();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button onClick={() => openModal('Modal Title', 'Modal Content')}>OPEN MODAL</button>
+      <ModalContainer />
     </div>
   );
 }
