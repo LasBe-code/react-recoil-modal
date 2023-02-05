@@ -1,4 +1,4 @@
-import { ModalContainer } from './Components/ModalContainer';
+import { Modal } from './Components/Modal';
 import { useModal } from './hooks/useModal';
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <button onClick={() => openModal('Modal Title', 'Modal Content')}>OPEN MODAL</button>
-      <ModalContainer />
+      <Modal />
     </div>
   );
 }
