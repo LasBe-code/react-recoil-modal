@@ -18,7 +18,7 @@ export const Modal = () => {
         <ModalDimmer>
           <ModalBody>
             <ModalTitle>{modalDataState.title}</ModalTitle>
-            <ModalContents>{modalDataState.children}</ModalContents>
+            <ModalContents>{modalDataState.content}</ModalContents>
             <ModalFooter>
               <ModalButtonWithBorder onClick={closeModal}>Cancel</ModalButtonWithBorder>
               <ModalButton onClick={modalDataState.callBack}>Ok</ModalButton>
