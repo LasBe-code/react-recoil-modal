@@ -13,9 +13,14 @@ export const useModal = () => {
     [setModalDataState],
   );
 
+  type OpenModalType = {
+    title: string;
+    content: JSX.Element | string;
+    callback?: () => any;
+  };
   const openModal = useCallback(
-    (title: string, children: JSX.Element | string, callback?: () => any) =>
-      setModalDataState({ isOpen: true, title: title, children: children, callBack: callback }),
+    ({ title, content, callback }: OpenModalType) =>
+      setModalDataState({ isOpen: true, title: title, content: content, callBack: callback }),
     [setModalDataState],
   );
 

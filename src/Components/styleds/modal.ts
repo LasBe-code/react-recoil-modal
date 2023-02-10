@@ -41,7 +41,6 @@ export const ModalButton = styled.button`
   border: none;
   width: 100%;
   height: 52px;
-  border-radius: 10px;
   :hover {
     opacity: 50%;
     transition: 0.5s;
